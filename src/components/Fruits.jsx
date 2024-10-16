@@ -13,8 +13,12 @@ function Fruits() {
       <ul>
         {fruits.map((fruit, index) => (
           <li key={fruit.name}>
-            <Fruit />
-            {fruit.color} {fruit.price} {fruit.emoji}
+            <Fruit
+              name={fruit.name}
+              color={fruit.color}
+              price={fruit.price}
+              emoji={fruit.emoji}
+            />
           </li>
         ))}
       </ul>

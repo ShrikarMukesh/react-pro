@@ -1,9 +1,12 @@
 import React from "react";
 
-const Fruit = () => {
+const Fruit = ({ name, color, price, emoji }) => {
   return (
     <div>
-      <h1>I am Fruit component</h1>
+      <h1>
+        {name} {color} {price} {emoji
+        }
+      </h1>
     </div>
   );
 };
